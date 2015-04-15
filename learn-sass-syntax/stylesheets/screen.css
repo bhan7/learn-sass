@@ -66,3 +66,28 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* headline style */
+/* line 9, ../sass/screen.scss */
+.headline {
+  font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif;
+}
+
+/* main content style */
+/* line 14, ../sass/screen.scss */
+.main-sec {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+/* line 17, ../sass/screen.scss */
+.main-sec .headline {
+  /*
+  font-family: $main-sec-ff;
+  font-size: 16px;
+  */
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+}
+/* line 28, ../sass/screen.scss */
+.main-sec .detail {
+  font-size: 12px;
+}

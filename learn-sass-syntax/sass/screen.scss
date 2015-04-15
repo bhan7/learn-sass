@@ -3,4 +3,29 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "variables", "compass/reset";
+
+/* headline style */
+.headline {
+	font-family: $headline-ff;
+}
+
+/* main content style */
+.main-sec {
+	font-family: $main-sec-ff;
+
+	.headline {
+		/*
+		font-family: $main-sec-ff;
+		font-size: 16px;
+		*/
+		font: {
+			family: $main-sec-ff;
+			size: 16px;
+		}
+	}
+
+	.detail {
+		font-size: 12px;
+	}
+}
