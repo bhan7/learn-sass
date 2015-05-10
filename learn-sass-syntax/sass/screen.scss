@@ -3,7 +3,11 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "variables", "mixin", "compass/reset";
+@import "variables", "mixin";
+
+/* separation line */
+@import "normalize-version";
+@import "normalize/html5";
 
 /* headline style */
 .headline {
@@ -49,4 +53,9 @@ p {
 .serious-error {
 	@extend %error;
 	border: 1px red;
+}
+
+.test-error {
+	@extend %error, .serious-error;
+	font-size: 20px;
 }
