@@ -5,11 +5,9 @@
 
 @import "variables", "mixin";
 
-/* separation line */
-@import "normalize-version";
-@import "normalize/html5";
-
 @import "compass/css3";
+@import "compass/typography";
+
 $supported-browsers: chrome;
 
 .test-inline-block {
@@ -74,4 +72,23 @@ p {
 .test-error {
 	@extend %error, .serious-error;
 	font-size: 20px;
+}
+
+a {
+	@include hover-link();
+	@include link-colors(#0cc, #c0c, #cc0, #ccc, #00c);
+}
+
+.list-unstyled {
+	@include no-bullets();
+}
+
+.text-force-wrap {
+	@include force-wrap();
+}
+
+/*compatible with low-version firefox browsers*/
+$use-mozilla-ellipsis-binding: true; 
+.text-ellipsis {
+	@include ellipsis();
 }

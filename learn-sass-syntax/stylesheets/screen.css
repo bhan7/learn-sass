@@ -7,68 +7,29 @@
 	width: 50%;
 	float: left;
 } */
-/* separation line */
-/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
-/* line 9, ../../../.rvm/gems/ruby-2.1.2/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/* line 29, ../../../.rvm/gems/ruby-2.1.2/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-/* line 40, ../../../.rvm/gems/ruby-2.1.2/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/* line 47, ../../../.rvm/gems/ruby-2.1.2/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
-[hidden],
-template {
-  display: none;
-}
-
-/* line 15, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 .test-inline-block {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 .test-opacity {
   opacity: 0.5;
 }
 
 /* headline style */
-/* line 24, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .headline {
   font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif;
 }
 
 /* main content style */
-/* line 29, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .main-sec {
   font-family: Arial, Verdana, Helvetica, sans-serif;
 }
-/* line 32, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 .main-sec .headline {
   /*
   font-family: $main-sec-ff;
@@ -77,39 +38,99 @@ template {
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 16px;
 }
-/* line 43, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .main-sec .detail {
   font-size: 12px;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 p {
   color: #7f00ff;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .webdemo-sec {
   width: 50%;
   float: left;
   -webkit-box-shadow: 1px 1px 3px 2px #cfcecf;
   box-shadow: 1px 1px 3px 2px #cfcecf;
 }
-/* line 60, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .webdemo-sec:hover {
   background-color: #f5f5f5;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .serious-error, .test-error {
   color: red;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .serious-error, .test-error {
   border: 1px red;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .test-error {
   font-size: 20px;
+}
+
+/* line 77, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #0cc;
+}
+/* line 4, ../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+}
+/* line 18, ../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #ccc;
+}
+/* line 21, ../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #00c;
+}
+/* line 24, ../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #c0c;
+}
+/* line 27, ../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #cc0;
+}
+
+/* line 82, ../sass/screen.scss */
+.list-unstyled {
+  list-style: none;
+}
+/* line 11, ../../../.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
+.list-unstyled li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 86, ../sass/screen.scss */
+.text-force-wrap {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
+
+/*compatible with low-version firefox browsers*/
+/* line 92, ../sass/screen.scss */
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -moz-binding: url('/stylesheets/xml/ellipsis.xml#ellipsis');
 }
