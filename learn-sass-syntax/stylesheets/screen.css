@@ -46,18 +46,29 @@ template {
   display: none;
 }
 
+/* line 15, ../sass/screen.scss */
+.test-inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 19, ../sass/screen.scss */
+.test-opacity {
+  opacity: 0.5;
+}
+
 /* headline style */
-/* line 13, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .headline {
   font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif;
 }
 
 /* main content style */
-/* line 18, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 .main-sec {
   font-family: Arial, Verdana, Helvetica, sans-serif;
 }
-/* line 21, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 .main-sec .headline {
   /*
   font-family: $main-sec-ff;
@@ -66,37 +77,39 @@ template {
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 16px;
 }
-/* line 32, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 .main-sec .detail {
   font-size: 12px;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 p {
   color: #7f00ff;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .webdemo-sec {
   width: 50%;
   float: left;
+  -webkit-box-shadow: 1px 1px 3px 2px #cfcecf;
+  box-shadow: 1px 1px 3px 2px #cfcecf;
 }
-/* line 44, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .webdemo-sec:hover {
   background-color: #f5f5f5;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .serious-error, .test-error {
   color: red;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .serious-error, .test-error {
   border: 1px red;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .test-error {
   font-size: 20px;
 }

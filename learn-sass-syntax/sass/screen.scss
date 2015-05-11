@@ -9,6 +9,17 @@
 @import "normalize-version";
 @import "normalize/html5";
 
+@import "compass/css3";
+$supported-browsers: chrome;
+
+.test-inline-block {
+	@include inline-block();
+}
+
+.test-opacity {
+	@include opacity(.5);
+}
+
 /* headline style */
 .headline {
 	font-family: $headline-ff;
@@ -40,6 +51,11 @@ p {
 
 .webdemo-sec {
 	@include col-6();
+
+	// box-shadow: 1px 1px 3px 2px #cfcecf;
+	// -webkit-box-shadow: 1px 1px 3px 2px #cfcecf;
+	// -moz-box-shadow: 1px 1px 3px 2px #cfcecf;
+	@include box-shadow(1px 1px 3px 2px #cfcecf);
 
 	&:hover {
 		background-color: #f5f5f5;
